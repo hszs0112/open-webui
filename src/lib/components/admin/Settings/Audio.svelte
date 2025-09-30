@@ -222,6 +222,7 @@
 							<option value="web">{$i18n.t('Web API')}</option>
 							<option value="deepgram">{$i18n.t('Deepgram')}</option>
 							<option value="azure">{$i18n.t('Azure AI Speech')}</option>
+							<option value="whisperwebui">{$i18n.t('Whisper WebUI')}</option>
 						</select>
 					</div>
 				</div>
@@ -354,6 +355,8 @@
 							</div>
 						</div>
 					</div>
+				{:else if STT_ENGINE === 'whisperwebui'}
+					
 				{:else if STT_ENGINE === ''}
 					<div>
 						<div class=" mb-1.5 text-xs font-medium">{$i18n.t('STT Model')}</div>
